@@ -4,7 +4,7 @@ public static class SortFileModified implements Comparator<File> {
             return Long.valueOf(f2.lastModified()).compareTo(f1.lastModified());
         }
     }
-    public static List<AndroidAppProcess> getRunningForegroundApps(Context context) {
+    public static List<AndroidAppProcess> getRunningForegroundApps(Context context) { //need to call this method from Jenia's Code
         List<File> directoryListing=null;
         List<AndroidAppProcess> processes = new ArrayList<>();
         File[] files = new File("/proc").listFiles();
